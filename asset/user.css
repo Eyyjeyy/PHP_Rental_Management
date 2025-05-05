@@ -1,0 +1,655 @@
+a p {
+    font-weight: 600;
+}
+
+#navbar {
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+ 
+
+}
+
+
+.content {
+    flex: 1;
+}
+
+#linknav {
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+    color: white; 
+     text-decoration: none;
+}
+
+#linknav:hover {
+    color: #F7B787; /* Change color on hover */
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow effect */
+}
+
+.nav-link p, .card-header {
+    color: #fff;
+}
+
+.nav-link.active {
+    background-color: #EE7214;
+}
+
+ul.navbar-nav, .collapse.navbar-collapse {
+    min-height: 100%;
+}
+
+.nav-item {
+    min-height: 100%;
+}
+
+#navbarbar {
+    display: flex!important; /* Enables flexbox layout */
+    align-items: center!important; /* Vertically centers items */
+    justify-content: center!important; /* Horizontally centers items */
+    /* padding-top: 25px;
+    padding-bottom: 25px; */
+
+    /* Add additional styling as needed */
+}
+
+
+#navbarSupportedContent {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    justify-content: end;
+
+}
+
+
+thead {
+    background-color: #F9E8D9;
+    /* border-color: #fff; */
+    /* border-color: #EE7214; */
+}
+
+.card-header {
+    background-color: #527853;
+}
+
+.card-body {
+    background-color: #F9F3EE;
+}
+
+.table-responsive {
+    background-color: #F9E8D9;
+}
+
+#tabletabletable {
+    background-color: #F9E8D9;
+}
+
+.border {
+    border-width: 2.5px !important;
+    border-color: #000000 !important;
+}
+
+.btn.receipt {
+    background-color: #527853; /* Example background color */
+    border-color: #527853;
+    color: white; /* Example text color */
+    padding: 7.5px 20px; /* Example padding */
+    border-radius: 4px; /* Example border radius */
+}
+.btn.complete {
+    background-color: #527853; /* Example background color */
+    border-color: #527853;
+    color: white; /* Example text color */
+    padding: 7.5px 20px; /* Example padding */
+    border-radius: 4px; /* Example border radius */
+}
+.btn.complete:hover {
+    background-color: #3A583C; /* Change color on hover */
+    border-color: #3A583C;
+}
+
+.btn.receipt:hover {
+    background-color: #3A583C; /* Change color on hover */
+    border-color: #3A583C;
+}
+
+#form-container {
+    background-color: #FDF4EF;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    clear: both;
+    z-index: 1;
+    overflow-wrap: break-word; /* Ensure long words break to prevent overflow */
+    word-wrap: break-word; /* Ensure long words break to prevent overflow */
+    word-break: break-word; /* Ensure long words break to prevent overflow */
+    hyphens: auto; /* Ensure hyphenation where appropriate */
+    max-width: 50%; /* Ensure the message doesn't exceed the container width */
+}
+
+/* Styles for right-aligned (sent) messages */
+.message-right {
+    background-color: #8DA58D;
+    font-size: 13px;
+    float: right;
+    align-self: flex-end;
+}
+
+/* Styles for left-aligned (received) messages */
+.message-left {
+    background-color: #F7B787;
+    align-self: flex-start;
+    font-size: 13px;
+    float: left;
+}
+
+.message img,
+.message video {
+    max-width: 100px; /* Placeholder size */
+    height: auto;
+    cursor: pointer;
+    display: block;
+}
+
+.message .timestamp {
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+}
+
+.message .seen-status {
+    display: block;
+}
+
+.message .sender {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+#file-name-label {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    display: block; /* Ensures it takes up its own line */
+    font-size: 12px; /* Sets the font size */
+    color: #333; /* Sets the text color */
+    background-color: #fff; /* Ensure visibility against the background */
+    padding: 7.5px;
+    border: 1px solid #ccc; /* Adds a border around the label */
+    border-radius: 4px; /* Rounds the corners */
+    word-wrap: break-word; /* Allows the text to wrap within the label */
+    max-height: 50px;
+    min-width: none;
+    max-width: 220px;
+    overflow: hidden;
+    margin: 2.5px;
+    margin-right: 5px;
+}
+
+#file-name-label:hover {
+    background-color: #e9e9e9; /* Changes background color on hover */
+    border-color: #bbb; /* Changes border color on hover */
+}
+
+#file-btn {
+    background-color: #527853;
+    border-color: #527853;
+    width: 106px;
+    margin: 2.5px; 
+}
+
+#file-btn:hover {
+    background-color: #3A583C;
+    border-color: #3A583C; 
+    color: white; 
+}
+
+#send-btn {
+    background-color: #EE7214;
+    border-color: #EE7214;
+    width: 106px;
+    margin: 2.5px; 
+ 
+}
+
+#send-btn:hover {
+    background-color: #C95B0E;
+    border-color: #C95B0E; 
+    color: white; 
+}
+
+#submitbtn {
+    background-color: #527853;
+    border-color: #527853;
+    width: 106px;
+    margin: 2.5px; 
+ 
+}
+
+#submitbtn:hover {
+    background-color: #3A583C;
+    border-color: #3A583C; 
+    color: white; 
+}
+
+textarea#message-input[name="message"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 10px;
+    resize: none;
+    height: 80px;
+    background-color: #ffffff;
+    flex: 1;
+}
+
+#list ul li a p {
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 30px; /* Added units */
+}
+
+#list ul li a p:hover {
+    background-color: #F7B787;
+}
+
+#viewchat {
+    height: 50px;
+}
+
+#usercol {
+    padding: 0;
+    height: 520px;
+}
+
+#chatcol {
+    padding-right: 0;
+    height: 520px;
+}
+
+#coluserchat {
+   width: 100%;
+   margin-top: 200px!important;
+}
+
+#btnzone {
+   width: 230px;
+   margin: 5px;
+}
+
+#btn-2 {
+    max-width: 235px;
+    min-width: none;
+}
+
+#textzone {
+    padding-left: 5px;
+}
+
+.textzone-2 {
+    flex: 1; /* Take remaining space */
+    min-width: none;
+    resize: none;
+    margin-top: 7.5px
+}
+
+
+svg.bi.bi-chat-dots-fill, svg.bi.bi-person-circle {
+    color: #F7B787;
+}
+
+.inter-google {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+
+.w-65 {
+    max-width: 60%;
+    min-width: 950px!important;
+}
+/* Media Queries for responsiveness */
+
+.w-75 {
+    max-width: 80%!important;
+    min-width: 1000px!important;
+}
+
+#menu-btn{
+    display: none;
+ }
+
+ #icontext {
+    color:#F7B787;
+ }
+
+ #icontext:hover svg {
+    color: #F28543; /* Change color on hover */
+    transition: fill 0.3s ease;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow effect */
+ }
+
+ 
+
+ .navbar-toggler {
+    max-width: 50px;
+    max-height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px;
+    justify-content: end;
+ }
+
+ .navbar-toggler:hover {
+    background-color: #527853;
+}
+
+ .navbar-toggler-icon {
+    justify-content: center;
+    padding: 10px;
+    filter: invert(80%) sepia(45%) saturate(686%) hue-rotate(330deg) brightness(105%) contrast(103%);
+}
+
+/* Apply the filter effect to the icon when the navbar-toggler is hovered */
+.navbar-toggler:hover .navbar-toggler-icon {
+    filter: invert(22%) sepia(92%) saturate(2000%) hue-rotate(357deg) brightness(220%) contrast(105%);
+
+
+}
+
+#monthly{
+    padding-right: 10px;
+    padding-left: 25px;
+}
+
+#createrec{
+    padding: 0;
+}
+
+#createrecbtn{
+    padding: 0;
+}
+
+@media (max-width: 575px) {
+#createrecbtn{
+    padding: 0;
+    margin-left: 25px;
+}
+}
+
+ #lastname {
+    width: 50%;
+ }
+
+ #paymentwhole {
+    margin-top: 177.5px;
+ }
+
+ .row.mb-7 {
+    margin-bottom: 50px !important;
+}
+
+
+.table-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;  /* Enables vertical scrolling */
+}
+
+.table-responsive {
+    width: 100%; /* Ensures the table takes the full width of the container */
+}
+
+/* modal */
+.modal-header {
+    background-color: #527853;
+    color: white;
+    font-weight: bold;
+}
+
+#paymentModalLabel {
+    font-weight: bold;
+}
+
+.modal-body {
+    background-color: white;
+}
+
+.modal-footer {
+    background-color: white;
+}
+
+.btn.btn-secondary {
+    background-color: #527853; /* Example background color */
+    border-color: #527853;
+    color: white; /* Example text color */
+    padding: 7.5px 20px; /* Example padding */
+    border-radius: 4px; /* Example border radius */
+}
+
+.btn.btn-secondary:hover {
+    background-color: #3A583C; /* Change color on hover */
+    border-color: #3A583C;
+}
+
+#submitBtn.btn.btn-primary {
+    background-color: #EE7214; /* Example background color */
+    border-color: #EE7214;
+    color: white; /* Example text color */
+    padding: 7.5px 20px; /* Example padding */
+    border-radius: 4px; /* Example border radius */
+}
+
+#submitBtn.btn.btn-primary:hover {
+    background-color: #C95B0E; /* Change color on hover */
+    border-color: #C95B0E;
+}
+
+.btn-close {
+    color: white!important; /* Example color for the close icon */
+    border: none; /* Remove any default border */
+    font-size: 20px; /* Example size of the close icon */
+    padding: 0.5rem; /* Example padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.btn-close:hover {
+    color: #ffffff; /* Change color on hover (e.g., red) */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+.btn-svg {
+    background: none;         /* No background color */
+    border: none;             /* Remove border */
+    padding: 0;               /* Remove padding */
+    margin: 0;                /* Remove margin */
+    cursor: pointer;          /* Show pointer cursor on hover */
+    display: inline-flex;     /* Ensure proper alignment of SVG */
+    align-items: center;      /* Center align SVG */
+    justify-content: center;  /* Center align SVG */
+    width: 24px;              /* Set a fixed width */
+    height: 24px;             /* Set a fixed height */
+    color: white;
+}
+
+.btn-svg:hover {
+    color: #e9e9e9;           /* Change color on hover */
+}
+
+.btn-svg:focus {
+    outline: none;            /* Remove outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Add a focus shadow */
+}
+
+.btn-svg svg {
+    width: 100%;              /* Make SVG fit the button */
+    height: 100%;             /* Make SVG fit the button */
+}
+
+/* end of modal */
+
+#textindex {
+    margin-top: 150px;
+}
+
+/* footer */
+
+
+
+@media (max-width: 769px) {
+    #usercol {
+        min-height: 25vh;
+        max-height: 25vh;
+    }
+}
+
+
+
+
+/* footer end */
+
+
+
+ @media (max-width: 990px) {
+
+    #textindex {
+        margin-bottom: 0px!important;
+        margin-top: 120px!important;
+        max-width: 95%;
+        justify-content: center!important;
+    }
+
+    #textindex-1 {
+        margin-bottom: 0px!important;
+        margin-top: 20px!important;
+        max-width: 95%;
+        margin-left: 2.5%!important;
+        justify-content: center!important;
+    }
+
+    #carousellpics {
+        max-width: 95%!important;
+        margin-left: 2.5%!important;
+        margin-top: 25px!important;
+    }
+
+    .w-65 {
+        min-width: 100% !important;
+    }
+
+    #lastname {
+        width: 100%;
+     }
+
+    #navnav {
+        display: block;
+        flex-direction: column;
+        align-items: end; /* Centers items horizontally within the container */
+        justify-content: end; /* Centers items vertically within the container */
+       
+     }
+
+     /* Ensure dropdown content is hidden by default */
+.dropdown-menu {
+    display: none; /* Hide dropdown menu initially */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    position: absolute;
+    top: 100%; /* Positions the dropdown menu below the navbar */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar-toggler[aria-expanded="true"] + .dropdown-menu {
+    display: block;
+    opacity: 1;
+    max-height: 300px; /* Adjust based on content */
+}
+
+/* Optional: Style the dropdown items */
+.dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+ }
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 769px) {
+    /* Example: further reduce padding and font size */
+
+    #list ul li a p {
+        padding: 3px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        font-size: 18px!important; 
+    }
+
+    .message img, .message video {
+        max-width: 100px; /* Adjusted size for smaller screens */
+    }
+
+    #usercol {
+        height: 20%;
+    }
+    
+    #chatcol {
+       height: 80%;
+    }
+
+    #btnzone {
+        display: flex;
+        flex-direction: row; /* Stack items vertically within the row */
+    }
+
+    #textbtnzone {
+        display: flex;
+        flex-direction: row; /* Stack items vertically within the row */
+        justify-content: center; /* Center horizontally */
+    }
+
+    textarea#message-input[name="message"] {
+        min-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #coluserchat {
+        width: 95%;
+     }
+
+     #chatwhole {
+        margin-bottom: 300px;
+     }
+
+     #form-container {
+        background-color: #FDF4EF;
+    }
+
+     .w-65 {
+        min-width: 100% !important;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+}

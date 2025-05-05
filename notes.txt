@@ -1,0 +1,27 @@
+o USE PRG Pattern for Form Submissions
+- Login Pages
+- Anything with input or form Submissions
+- Add, Delete User
+- Add, Delete Houses
+
+
+o Use htmlspecialchars to protect from XSS Attacks
+o Use prepared statements to protect from SQL Injection Attacks
+
+project_rental_db
+
+
+-- 6/30/24 --
+o Use Javascript SSE Events to Fetch Data Realtime on change (Insert/Delete/Update)
+- Tutorial Link: https://youtu.be/rW7Ein0VtI8
+
+
+
+
+
+
+
+
+
+
+

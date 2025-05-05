@@ -1,0 +1,656 @@
+
+.collapse {
+    min-width: 100%;
+    flex-direction: column;
+}
+
+nav.navbar {
+    min-width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+div.sidebar {
+    padding: 0;
+    min-height: 100vh;
+    min-width: 250px !important;
+    max-width: 250px;
+    background-color: #527853;
+    /* display: flex; */
+}
+
+li.d-flex{
+    align-content: center;
+}
+
+li.nav-item {
+    margin: 5px 0px;
+}
+
+.nav-link {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.nav-link p {
+    font-size: 16px;
+    color: #fff;
+}
+.nav-link.active {
+    background-color: #0d6efd;
+}
+
+.row {
+    /* min-height: 80vh; */
+}
+
+ul {
+    width: 100%;
+    /* align-self: center; */
+}
+ul.logout {
+    margin-top: 20em;
+}
+
+a {
+    display: flex !important;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+a svg,a p {
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a p {
+    font-weight: 600;
+}
+
+.col.main.content{
+    background-color: #26262633;
+    flex-basis: 75%; /* 75% width for main content */
+    .card-body:nth-of-type(2) {
+        margin-bottom: 4em;
+    }
+}
+
+.col.main.content .card-body{
+    background-color: #fff;
+    margin-top: 4em;
+    
+}
+
+table.table{
+    margin-top: 0rem; 
+}
+
+
+
+
+
+
+/* Container Flexbox */
+.chatflex {
+    display: flex;
+    height: 100vh;
+    background-color: #F9E8D9; /* Light cream color */
+}
+
+#usercol .card-body ul li a:hover {
+    background-color: #F7B787;
+    border-radius: 5px;
+}
+
+/* User List Styling */
+.user-list {
+    width: 25%; /* Adjust width as needed */
+    background-color: #F9E8D9; /* Soft blue-gray color */
+    color: #2C3E50; /* Dark blue-gray text color */
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.user-list h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2C3E50; /* Dark blue-gray text color */
+}
+
+.user-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-list ul li {
+    margin-bottom: 10px;
+}
+
+.user-list ul li a {
+    color: #2C3E50; /* Dark blue-gray text color */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.user-list ul li a:hover {
+    background-color: #EE7214; /* Bright orange color */
+    color: #F9E8D9; /* Light cream text color */
+}
+
+.list {
+    background-color: #A9B7C0;
+    min-height: 100%;
+}
+
+/* Chat Section Styling */
+.chat-section {
+    width: 75%; /* Adjust width as needed */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9E8D9; /* Light cream color */
+}
+
+#coluserchat {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+
+}
+
+#usercol, #chatcol {
+    min-height: 100vh;  /* Minimum height set to the viewport height */
+    max-height: 100vh;  /* Prevents the height from exceeding the viewport */
+    padding: 0;
+    overflow-y: auto;   /* Ensures scrollability if content exceeds the height */
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #bdc3c7;
+    overflow-y: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-wrap: break-word; /* Ensure long words break to prevent overflow */
+    word-wrap: break-word; /* Ensure long words break to prevent overflow */
+    word-break: break-word; /* Ensure long words break to prevent overflow */
+    hyphens: auto; /* Ensure hyphenation where appropriate */
+    clear: both;
+    max-width: 50%;
+}
+
+.message img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.message-left {
+    background-color: #F7B787;
+    align-self: flex-start;
+    font-size: 13px;
+    float: left;
+    /* align-self: flex-start; */
+}
+
+.message-right {
+    background-color: #8DA58D;
+    font-size: 13px;
+    float: right;
+    /* color: #ffffff; */
+    /* align-self: flex-end; */
+}
+
+.message-right img {
+    align-self: flex-end;
+}
+
+.message-left img {
+    align-self: flex-start;
+}
+
+.timestamp {
+    display: block;
+    font-size: 0.8em;
+    color: white;
+    margin-top: 5px;
+}
+
+.seen-status {
+    font-size: 0.85em;
+    color: #474545;
+}
+
+/* Send Message Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 10px;
+    resize: none;
+    height: 80px;
+    background-color: #ffffff; /* White background for textarea */
+}
+
+button {
+    background-color: #527853; /* Dark green color */
+    color: #F9E8D9; /* Light cream color */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#file-name-label {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    background-color: #fff;
+    padding: 7.5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    word-wrap: break-word;
+    max-height: 50px;
+    min-width: none;
+    max-width: 220px;
+    overflow: hidden;
+}
+
+#file-btn {
+    background-color: #527853;
+    border-color: #527853;
+    width: 106px;
+    margin: 2.5px;
+}
+#send-btn {
+    background-color: #EE7214;
+    border-color: #EE7214;
+    width: 106px;
+    margin: 2.5px;
+}
+
+button:hover {
+    background-color: #EE7214; /* Bright orange color */
+}
+button#clear:hover, button#clear1:hover, button#clear2:hover, button.addcontract:hover, button.uploadcontract:hover, button.eviction:hover {
+    background-color: #3A583C !important; /* Change color on hover */
+    border-color: #3A583C !important;
+}
+
+
+.table-buttons-update {
+    color: #fff;
+    background-color: #527853 !important;
+    border-color: #527853 !important;
+}
+.table-buttons-delete {
+    color: #fff;
+    background-color: #EE7214 !important;
+    border-color: #EE7214 !important;
+}
+
+
+
+
+
+/* edit header/navbar */
+
+#navbarNav {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    justify-content: end;
+
+}
+
+ .navbar-toggler {
+    max-width: 50px;
+    max-height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px;
+    justify-content: end;
+ 
+ }
+
+ .navbar-toggler:hover {
+    background-color: #3A583C;
+}
+
+.navbar-toggler-icon {
+    justify-content: center;
+    padding: 10px;
+    filter: invert(80%) sepia(45%) saturate(686%) hue-rotate(330deg) brightness(105%) contrast(103%);
+}
+
+/* Apply the filter effect to the icon when the navbar-toggler is hovered */
+.navbar-toggler:hover .navbar-toggler-icon {
+    filter: invert(22%) sepia(92%) saturate(2000%) hue-rotate(357deg) brightness(220%) contrast(105%);
+
+}
+
+
+
+
+#navbarbar {
+    display: flex!important; /* Enables flexbox layout */
+    align-items: center!important; /* Vertically centers items */
+    justify-content: center!important; /* Horizontally centers items */
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+
+    /* Add additional styling as needed */
+}
+
+
+.hover-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.my-svg-icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+}
+
+.hover-container:hover svg {
+    fill: #F7B787; /* Change to your desired hover color for the SVG */
+}
+
+.hover-container:hover p {
+    color: #F7B787; /* Change to your desired hover color for the text */ /* Slightly enlarges the text on hover */
+}
+
+
+#userbody {
+    white-space: nowrap; /* Prevents content from wrapping to the next line */
+}
+
+#tablelimiter {
+    min-width: none;
+    max-width: 100%;
+    max-height: 800px; /* Set your preferred max height */
+    overflow-y: auto; /* Adds vertical scroll if content exceeds height */
+    overflow-x: auto; /* Adds horizontal scroll if needed */
+}
+
+table {
+    width: 100%;        /* Ensures table takes up full width of container */
+    min-width: 100%;    /* Ensures table doesn't shrink below the container width */
+    table-layout: auto; /* Adjusts column widths based on content */
+    border-collapse: collapse; /* Ensures no gaps between borders */
+}
+
+#tableheader {
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width: 991px) {
+    #navbar {
+        display: none;
+    }
+
+    .navcontainer {
+        display: none;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 442px) {
+    div.sidebar {
+        min-height: 20vh;
+    }
+    a.nav-link {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 672px) {
+    div.sidebar {
+        min-height: 20vh;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    div.sidebar {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 250px !important; 
+        max-width: none;
+        width: 100%;
+        min-height: 132px;
+        position: fixed;
+        top:0; left:0; right:0;
+        z-index: 800;
+        /* display: flex; */
+        display: none;
+    }
+    a p{
+        margin-left: 0px;
+        width: 90px;
+        padding-left: 10px;
+    }
+    a.nav-link {
+        justify-content: center;
+    }
+
+    #usercol, #chatcol {
+        min-height: 86.5vh;  /* Minimum height set to the viewport height */
+        max-height: 86.5vh;  /* Prevents the height from exceeding the viewport */
+        padding: 0;
+        overflow-y: auto;   /* Ensures scrollability if content exceeds the height */
+    }
+
+}
+
+@media (max-width: 767px) {
+    #usercol {
+        min-height: 16vh;  /* Minimum height set to the viewport height */
+        max-height: 16vh;  /* Prevents the height from exceeding the viewport */
+        padding: 0;
+        overflow-y: auto;   /* Ensures scrollability if content exceeds the height */
+    }
+
+    #chatcol {
+        min-height: 69.5vh;  /* Minimum height set to the viewport height */
+        max-height: 69.5vh;  /* Prevents the height from exceeding the viewport */
+        padding: 0;
+        overflow-y: auto;   /* Ensures scrollability if content exceeds the height */
+    }
+}
+
+@media (max-width: 990px) {
+
+    #textindex {
+        margin-bottom: 0px!important;
+        margin-top: 20px!important;
+        max-width: 95%;
+        justify-content: center!important;
+    }
+
+    #textindex-1 {
+        margin-bottom: 0px!important;
+        margin-top: 20px!important;
+        max-width: 95%;
+        margin-left: 2.5%!important;
+        justify-content: center!important;
+    }
+
+    #carousellpics {
+        max-width: 95%!important;
+        margin-left: 2.5%!important;
+        margin-top: 25px!important;
+    }
+
+    .w-65 {
+        min-width: 100% !important;
+    }
+
+    #lastname {
+        width: 100%;
+     }
+
+    #navnav {
+        display: block;
+        flex-direction: column;
+        align-items: end; /* Centers items horizontally within the container */
+        justify-content: end; /* Centers items vertically within the container */
+        height: 100%;
+       
+     }
+
+     /* Ensure dropdown content is hidden by default */
+.dropdown-menu {
+    display: none; /* Hide dropdown menu initially */
+    opacity: 0;
+    min-height: 575px;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    position: absolute;
+    top: 100%; /* Positions the dropdown menu below the navbar */
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 100%;
+    border: none!important;
+}
+
+.navbar-toggler[aria-expanded="true"] + .dropdown-menu {
+    display: block;
+    opacity: 1;
+    max-height: 300px; /* Adjust based on content */
+    border: none!important;
+}
+
+/* Optional: Style the dropdown items */
+.dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+ }
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 769px) {
+    /* Example: further reduce padding and font size */
+
+    #list ul li a p {
+        padding: 3px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        font-size: 18px!important; 
+    }
+
+    .message img, .message video {
+        max-width: 100px; /* Adjusted size for smaller screens */
+    }
+
+    #usercol {
+        height: 20%;
+    }
+    
+    #chatcol {
+       /* height: 80%; */
+    }
+
+    #btnzone {
+        display: flex;
+        flex-direction: row; /* Stack items vertically within the row */
+    }
+
+    #textbtnzone {
+        display: flex;
+        flex-direction: row; /* Stack items vertically within the row */
+        justify-content: center; /* Center horizontally */
+    }
+
+    textarea#message-input[name="message"] {
+        min-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #coluserchat {
+        width: 95%;
+     }
+
+     #chatwhole {
+        margin-bottom: 300px;
+     }
+
+     #form-container {
+        background-color: #FDF4EF;
+    }
+
+     .w-65 {
+        min-width: 100% !important;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #navbar {
+        display: block;
+        position: fixed;
+        top:0; left:0; right:0;
+        z-index: 1000;
+        
+    }
+
+    .navcontainer {
+        padding: 0!important;
+        margin: 0;
+        margin-bottom: 132px;
+     
+    }
+
+    
+
+}
+
+@media (max-width: 1400px) {
+    #coluserchat.row {
+        max-width: 80%;
+    }
+}
+@media (max-width: 1200px) {
+    #coluserchat.row {
+        max-width: 90%;
+    }
+}
+@media (max-width: 992px) {
+    #coluserchat.row {
+        max-width: 100%;
+    }
+}
